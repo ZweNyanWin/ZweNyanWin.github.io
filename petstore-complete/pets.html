@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Pets</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meet Our Pets</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="pets.html">Pets</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Adopt a Pet</h2>
+
+        <!-- filter checkboxes -->
+        <div
+          class="filter-container"
+          style="
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 16px;
+          "
+        >
+          <strong>Type:</strong>
+          <label
+            ><input
+              type="checkbox"
+              id="type-dogs"
+              name="pet-type"
+              value="Dog"
+              checked
+            />
+            Dogs</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="type-cats"
+              name="pet-type"
+              value="Cat"
+              checked
+            />
+            Cats</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="type-capys"
+              name="pet-type"
+              value="Capybara"
+              checked
+            />
+            Capybaras</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="type-birds"
+              name="pet-type"
+              value="Bird"
+              checked
+            />
+            Birds</label
+          >
+        </div>
+
+        <div id="pet-list" class="pet-list">
+          <!-- pets will be injected here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Contact us at <strong>info@petparadise.com</strong></p>
+    </footer>
+
+    <!-- load jQuery, then your data + script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="pets.js"></script>
+    <!-- defines `pets` array -->
+    <script src="script.js"></script>
+    <!-- new jQuery loader/filter logic -->
+  </body>
+</html>

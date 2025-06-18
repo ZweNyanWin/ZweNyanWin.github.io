@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Pet Store</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="pets.html">Pets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="featured">
+        <h2>Featured Pets</h2>
+        <div class="pet-list">
+          <div class="pet">
+            <img src="dogs/dog02.jpg" alt="Cute Dog" />
+            <p>Charlie - Golden Retriever</p>
+            <button onclick="adoptPet()">Adopt Now</button>
+          </div>
+          <div class="pet">
+            <img src="cats/cat01.jpg" alt="Cute Cat" />
+            <p>Milo - British Shorthair</p>
+            <button onclick="adoptPet()">Adopt Now</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Contact us at: <strong>info@petstore.com</strong></p>
+    </footer>
+    <!-- Footer (Contact Section) -->
+    <footer id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>
+            <strong>Address:</strong><br />
+            Assumption University<br />
+            592/3 Soi Ramkhamhaeng 24<br />
+            Hua Mak, Bangkok 10240<br />
+            Thailand
+          </p>
+          <p>Email: info@petparadise.com</p>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5396946337635!2d100.60704491531836!3d13.736717601045448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed3c162315f%3A0x63b4d3db31aab1d!2sAssumption%20University%20of%20Thailand!5e0!3m2!1sen!2sth!4v1718079585476!5m2!1sen!2sth"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
