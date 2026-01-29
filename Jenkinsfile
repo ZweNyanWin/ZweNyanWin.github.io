@@ -41,7 +41,7 @@ pipeline {
 
   post {
     always {
-      archiveArtifacts artifacts: "${APP_DIR}/dist/**", fingerprint: true, allowEmptyArchive: true
+      archiveArtifacts artifacts: "${env.APP_DIR}/dist/**", fingerprint: true, allowEmptyArchive: true
     }
   }
 }
