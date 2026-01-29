@@ -48,6 +48,15 @@ pipeline {
   post {
     always {
       archiveArtifacts artifacts: "${env.APP_DIR}/dist/**", allowEmptyArchive: true
+publishHTML(target: [
+  reportDir: "${env.APP_DIR}/dist",
+  reportFiles: "index.html",
+  reportName: "Vite Site",
+  keepAll: true,
+  alwaysLinkToLastBuild: true,
+  allowMissing: false
+])
+
     }
   }
 }
