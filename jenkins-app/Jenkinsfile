@@ -8,10 +8,21 @@ pipeline {
   }
 
   stages {
+
+    stage('Checkout') {
+      steps {
+        // pull your repo into workspace
+        git branch: 'main', url: 'https://github.com/ZweNyanWin/ZweNyanWin.github.io.git'
+        sh 'ls -la'
+        sh 'ls -la jenkins-app || true'
+      }
+    }
+
     stage('Install') {
       steps {
         dir('jenkins-app') {
-          sh 'npm ci || npm install'
+          sh 'ls -la'
+          sh 'npm install'
         }
       }
     }
@@ -53,3 +64,4 @@ pipeline {
     }
   }
 }
+
